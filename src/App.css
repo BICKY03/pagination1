@@ -1,30 +1,61 @@
-.App {
+header {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
 }
 
+.wrapper {
+  padding: 0px 5px;
+}
 table {
-  margin: 0 auto;
+  width: 100%;
   border-collapse: collapse;
-  width: 80%;
 }
 
-th,
+thead {
+  text-align: left;
+  color: white;
+  height: 35px;
+  background-color: #009879;
+}
+
 td {
-  border: 1px solid #ddd;
-  padding: 8px;
+  border-bottom: 1px solid #e5e5e5;
+  height: 35px;
+}
+.table__line {
+  border-bottom: 1px solid #e5e5e5;
 }
 
-th {
-  background-color: #f2f2f2;
+.end__line {
+  border-top: 2px solid #009879;
 }
 
-button {
-  margin: 10px;
-  padding: 10px 20px;
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.previous,
+.next {
+  color: white;
+  background-color: #009879;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin: 0px 20px;
   cursor: pointer;
 }
 
-button:disabled {
-  cursor: not-allowed;
-  background-color: #ccc;
+.page__number {
+  text-align: center;
+  width: 15px;
+  color: white;
+  background-color: #009879;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
